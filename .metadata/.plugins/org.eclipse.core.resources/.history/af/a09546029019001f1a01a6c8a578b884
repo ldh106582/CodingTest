@@ -1,0 +1,14 @@
+package practice;
+
+public class TreeNode 
+{
+	int val;
+	TreeNode left;
+	TreeNode Right;
+	public TreeNode(int val) 
+	{
+		this.val = val;
+	}
+	
+	
+}

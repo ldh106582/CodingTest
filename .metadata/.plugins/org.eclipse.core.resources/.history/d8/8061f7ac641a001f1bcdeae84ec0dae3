@@ -1,0 +1,60 @@
+package practice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+// gpt 1번 문제: 
+/*
+ * 		 정수로 이루어진 배열과 정수 target이 주어집니다.
+		  배열 안에서 두 수를 더하여 target이 되는 두 수의 인덱스를 찾아 해당 인덱스를 반환하는 함수를 작성하세요. 
+		  단, 같은 요소는 두 번 사용할 수 없습니다.
+ * */
+
+public class TreeNode 
+{
+	int val;
+	TreeNode left;
+	TreeNode right;
+	public TreeNode(int val) 
+	{
+		this.val = val;
+	}
+	
+	public static TreeNode[] findNodes(TreeNode tn, int target) 
+	{
+		List<TreeNode> nodeList = new ArrayList<>();
+		System.out.println("1.nodeList : " + nodeList);
+		f_Node(tn, target, nodeList);
+		System.out.println("2.nodeList : " + nodeList);
+		return nodeList.toArray(new TreeNode[0]);
+	}
+	
+	public static void f_Node(TreeNode tn, int target, List<TreeNode> nodeList) 
+	{
+		if(tn == null) 
+		{
+			System.out.println("if 구문 ");
+			return;
+		}
+		if(tn.val == target) 
+		{
+			nodeList.add(tn);
+			System.out.println("2.if 구문  : " + nodeList);
+		}
+		f_Node(tn.left, target, nodeList);
+		f_Node(tn.right, target, nodeList);
+		
+	}
+	
+
+/*
+ * gpt 2번 문제 :  두 개의 정렬된 배열이 주어졌을 때, 이 두 배열을 하나의 정렬된 배열로 합치는 함수를 작성하세요
+ * */
+	
+	public int[] gptproblem_2 ()
+	{
+		
+		return null;
+	}
+}

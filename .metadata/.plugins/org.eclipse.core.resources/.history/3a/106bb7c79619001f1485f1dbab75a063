@@ -1,0 +1,42 @@
+package practice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TreeNode 
+{
+	int val;
+	TreeNode left;
+	TreeNode right;
+	public TreeNode(int val) 
+	{
+		this.val = val;
+	}
+	
+	public static TreeNode[] findNodes(TreeNode tn, int target) 
+	{
+		List<TreeNode> nodeList = new ArrayList<>();
+		System.out.println("1.nodeList : " + nodeList);
+		f_Node(tn, target, nodeList);
+		System.out.println("2.nodeList : " + nodeList);
+		return nodeList.toArray(new TreeNode[0]);
+	}
+	
+	public static void f_Node(TreeNode tn, int target, List<TreeNode> nodeList) 
+	{
+		if(tn == null) 
+		{
+			System.out.println("if 구문 ");
+			return;
+		}
+		if(tn.val == target) 
+		{
+			nodeList.add(tn);
+			System.out.println("if 구문  : " + nodeList);
+		}
+		f_Node(tn.left, target, nodeList);
+		f_Node(tn.right, target, nodeList);
+		
+	}
+	
+}
