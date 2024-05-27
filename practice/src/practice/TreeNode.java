@@ -92,4 +92,10 @@ public class TreeNode
 		
 		return arr_r;
 	}
+	
+	public int[] gpt_3(int[] num1, int[] num2) 
+	{
+		
+		return null;
+	}
 }

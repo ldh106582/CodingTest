@@ -99,6 +99,25 @@ public class codingtest_1
 		int[] r_arr = TreeNode.Gptproblem_2(arr_1, arr_1);
 		System.out.println("r_arr 값 : " + Arrays.toString(r_arr));
 		
+		//3번째 문제 
+		/*
+		  문제: 두 배열의 교집합 II
+			주어진 두 배열 nums1과 nums2의 교집합을 구하는 함수를 작성하세요.
+			각 교집합 원소는 두 배열에 나타나는 횟수만큼 포함되어야 합니다.
+			교집합을 구한 결과는 어떤 순서로 출력되어도 상관없습니다.
+		 */
+			Gpt_3 gpt_3 = new Gpt_3();
+			
+			int[] num1 = {1,2,2,1};
+			int[] num2 = {2,2};
+			int[] result_3 = gpt_3.intersect(num1, num2);
+			System.out.println(Arrays.toString(result_3));
+			
+			int[] num3 = {4,9,5};
+			int[] num4 = {9,4,9,8,4};
+			int[] result_3_1 = gpt_3.intersect(num3, num4);
+			System.out.println(Arrays.toString(result_3_1));		
+		
 	}
 
 }
