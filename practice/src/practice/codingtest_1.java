@@ -1,6 +1,5 @@
 package practice;
 import java.util.Arrays;
-
 import practice.practice.*;
 
 public class codingtest_1 
@@ -9,6 +8,7 @@ public class codingtest_1
 
 	public static void main(String[] args) 
 	{
+		TreeNode tree = new TreeNode(); 
 		/*
 		 *  배열 조작
 			문제: 정수 배열이 주어지면, 배열의 각 요소를 두 배로 만든 새로운 배열을 반환하세요.
@@ -94,9 +94,9 @@ public class codingtest_1
 		 * */
 		
 		// 도현_변수 선언
-		int[] arr_1 = new int[] {1,3,5};
-		int[] arr_2 = new int[] {2,4,6};
-		int[] r_arr = TreeNode.Gptproblem_2(arr_1, arr_1);
+		int[] arr_1 = {1, 3, 5};
+		int[] arr_2 = {2, 4, 6};
+		int[] r_arr = tn.Gptproblem_2(arr_1, arr_2);
 		System.out.println("r_arr 값 : " + Arrays.toString(r_arr));
 		
 		//3번째 문제 
@@ -106,16 +106,16 @@ public class codingtest_1
 			각 교집합 원소는 두 배열에 나타나는 횟수만큼 포함되어야 합니다.
 			교집합을 구한 결과는 어떤 순서로 출력되어도 상관없습니다.
 		 */
-			Gpt_3 gpt_3 = new Gpt_3();
+
 			
 			int[] num1 = {1,2,2,1};
 			int[] num2 = {2,2};
-			int[] result_3 = gpt_3.intersect(num1, num2);
+			int[] result_3 = tree.Gpt_3(num1, num2);
 			System.out.println(Arrays.toString(result_3));
 			
 			int[] num3 = {4,9,5};
 			int[] num4 = {9,4,9,8,4};
-			int[] result_3_1 = gpt_3.intersect(num3, num4);
+			int[] result_3_1 = tree.Gpt_3(num3, num4);
 			System.out.println(Arrays.toString(result_3_1));		
 		
 	}

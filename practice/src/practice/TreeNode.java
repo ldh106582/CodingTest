@@ -1,7 +1,9 @@
 package practice;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 
 // gpt 1번 문제: 
@@ -13,6 +15,12 @@ import java.util.List;
 
 public class TreeNode 
 {
+	public TreeNode() 
+	{
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	int val;
 	TreeNode left;
 	TreeNode right;
@@ -63,39 +71,66 @@ public class TreeNode
 		int[] arr_r = new int[] {arr_1.length, arr_2.length};
 		
 		// 도현_ 배열의 형태 반복문 진행 i와 j 가 크게 되면 자동으로 반복문을 멈추게 됨
-		while(i < arr_1.length && j < arr_2.length) 
-		{
-			// 도현_만약 배열의0번째 인덱스가 가장 큰 최대 인덱스 2번째 값보다 작을 경우 arr_r변수의 k가 0부터 1씩 더해줘 arr_1[i]번째 값을 담아줌
-			if(arr_1[i] < arr_2[2] )
+	    while (i < arr_1.length && j < arr_2.length) 
+	    {
+	        if (arr_1[i] < arr_2[j]) 
+	        { 
+	            arr_r[k] = arr_1[i];
+	            System.out.println("if구문 조건 만족 시 [i]: " + arr_1[i]);
+	            i++;
+	        }
+	         else
 			{
-				arr_r[k++] = arr_1[i++];
-				System.out.println("if구문 조건 만족 시 [i] : " + arr_r[k++]);
+				arr_r[k] = arr_2[j];
+				System.out.println("if구문 조건 비만족 시 [j] : " + arr_2[j]);
+				j++;
 			}
-			else
-			{
-				arr_r[k++] = arr_2[j++];
-				System.out.println("if구문 조건 만족 시 [j] : " + arr_r[k++]);
-			}
+			k++;
 		}
 		// 도현_ 남은 숫자 확인
 		while(i < arr_1.length)
 		{
-			arr_r[k++] = arr_1[i++];
-			System.out.println("남아 있는 숫자확인 [i] :" + arr_r[k++]);
+			arr_r[k] = arr_1[i];
+			System.out.println("남아 있는 숫자확인 [i] :" + arr_r[i]);
+			i++;
+			k++;
 		}
-		
-		while(i < arr_2.length) 
-		{
-			arr_r[k++] = arr_2[j++];
-			System.out.println("남아 있는 숫자확인 [j] :" + arr_r[k++]);
-		}
+        while (j < arr_2.length) 
+        {
+            arr_r[k] = arr_2[j];
+            System.out.println("남아 있는 숫자확인 [j]: " + arr_2[j]);
+            j++;
+            k++;
+        }
 		
 		return arr_r;
 	}
 	
-	public int[] gpt_3(int[] num1, int[] num2) 
+	public int[] Gpt_3(int[] num1, int[] num2) 
 	{
+		Set<Integer> set1 = new HashSet<Integer>();
+		Set<Integer> set2 = new HashSet<Integer>();
 		
-		return null;
+		for(int num : num1) 
+		{
+			set1.add(num);
+		}
+		
+		for(int num : num2) 
+		{
+			if(set1.equals(num)) 
+			{
+				set2.add(num);
+			}
+		}
+		
+		int[] result_3 = new int[set2.size()];
+		int i = 0;
+		for(int num : set2) 
+		{
+			result_3[i++] = num;
+		}
+		
+		return result_3;
 	}
 }
