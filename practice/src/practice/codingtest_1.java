@@ -119,5 +119,8 @@ public class codingtest_1
 			System.out.println(Arrays.toString(result_3_1));		
 		
 	}
+	
+	// 4번쨔 문제
+	
 
 }
