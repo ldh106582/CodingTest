@@ -20,18 +20,21 @@ public class codingtest_2
 			while(right < n) 
 			{
 				// set객체에 해당하는 문자가 있는지 출력
+				// s변수 안에 있는 문자를 한 개씩 개수가 있는지를 비교함
 				if(!set.contains(s.charAt(right))) 
 				{
+					System.out.println("right : " + right);
 					// 파라미터의 문자를 set 객체에 담음
+					// abc 문자가 왔을 경우 a문자 b문자 c문자 하나씩 set 객체에 담음
 					set.add(s.charAt(right));
 					// 1씩 추가
 					right++;
 					// Math 객체의 최대 문자열 길이로 최신화
-					max = Math.max(max,right - left);
+					max = Math.max(max, right-left);
 				}
 				else 
 				{
-					// 중복된 문자를 제거하는 함수
+					// set에 있는 동일한 문자를 제거하는 함수
 					set.remove(s.charAt(left));
 					// 반복을 위한 left 변수에 1씩 추가
 					left++;
