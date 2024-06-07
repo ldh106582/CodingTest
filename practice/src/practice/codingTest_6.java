@@ -3,10 +3,12 @@ import java.util.*;
 
 public class codingTest_6 
 {
+	// 자체공부_2024.06.07
     public static void main(String[] args) 
     {
         Scanner sc = new Scanner(System.in);
         System.out.println("첫 번째 배열의 값을 입력하세요");
+        
         int nums = sc.nextInt();
         System.out.println("두 번째 배열의 값을 입력하세요");
         int num = sc.nextInt();
