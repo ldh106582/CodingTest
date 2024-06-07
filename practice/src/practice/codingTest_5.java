@@ -8,7 +8,7 @@ public class codingTest_5
 	{
 		// 스캐너 객체생성 _ 2024.06.06
 		Scanner sc = new Scanner(System.in);
-		System.out.println("대여할 회의실 개수를 입력해주세요");
+		System.out.println("대여할 회의실 번호를 입력해주세요");
 		int t = sc.nextInt();
 		int[][] arr = new int[t][2];
 		
