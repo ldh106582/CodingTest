@@ -21,8 +21,9 @@ public class codingTest_9
 					return answer;
 				}
 			}
-		}
-		return answer;
+			return answer;
+		} else return false;
+
 	}
 
 	public static void main(String[] args) 
