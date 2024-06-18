@@ -16,6 +16,10 @@ public class codingTest_14
 			// 소문자를 확인하여 실행하는 조건문
 			if(Character.isLowerCase(ch)) 
 			{
+				// ch = b 라고 하면 b(98) - a(97) = 1
+				//  1 + n(2) = 3
+				// 3 % 26 = 3
+				// 3 + 97 = 100 이되어 100번은 'd'이기에 'd'가 됨
 				ch = (char) ((ch - 'a' + n)%26 + 'a');
 			}
 			// 대문자를 확인하여 실행하는 조건문
