@@ -19,6 +19,7 @@ public class codingTest_16
 			{
 				index ++;
 			}
+			
 			if(index % 2 == 0) 
 			{
 				answer += s_answer.toLowerCase();
