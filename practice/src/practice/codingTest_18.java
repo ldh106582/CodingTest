@@ -4,6 +4,7 @@ public class codingTest_18
 {
 	public static int[] gpt_18(long n) 
 	{
+		// valueOf : String 객체로 변환하는 함수
 		String a = String.valueOf(n);
 		int[] answer = new int[a.length()];
 		
