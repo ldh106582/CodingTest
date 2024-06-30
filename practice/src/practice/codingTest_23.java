@@ -3,9 +3,12 @@ package practice;
 public class codingTest_23 
 {
 	
-	public static int gpt_23(int[] n, int m[]) 
+	public static int[] gpt_23(int[] n, int m[]) 
 	{
-		int answer = 0;
+		int[] answer = new int[2];
+		
+		
+		
 		return answer;
 	}
 
