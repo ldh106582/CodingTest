@@ -14,6 +14,7 @@ public class codingTest_23
 
 	public static void main(String[] args) 
 	{
+		// 두 가의 값을 파라미터로 넘김
 		int[] n = new int[3];
 		int[] m = new int[12];
 		
