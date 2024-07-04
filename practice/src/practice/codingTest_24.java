@@ -3,24 +3,27 @@ import java.util.*;
 
 public class codingTest_24 
 {
-	public static int gpt_24(int num) 
+	public static int gpt_24(long num) 
 	{
 		int answer = 0;
 		
-		for() 
+		while(num != 1) 
 		{
 			if(num % 2 == 0) 
 			{
-				answer = num/2;
+				num/=2;
 			}
-			if(num % 3 == 0)
+			else
 			{
-				answer = (num * 3) + 1;		
+				num = num * 3 + 1;		
+				answer ++;
 			}
+			
+			if(answer >= 500) answer = -1;
+			break;
 		}
 			
-			
-			
+		System.out.println("answer : " + answer);
 		return answer;
 	}
 
@@ -28,7 +31,7 @@ public class codingTest_24
 	{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("숫자를 입력해주세요");
-		int num = sc.nextInt();
+		long num = sc.nextInt();
 
 		gpt_24(num);
 	}
