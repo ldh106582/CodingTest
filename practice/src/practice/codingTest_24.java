@@ -29,6 +29,7 @@ public class codingTest_24
 
 	public static void main(String[] args) 
 	{
+		// Scanner 객체 생성
 		Scanner sc = new Scanner(System.in);
 		System.out.println("숫자를 입력해주세요");
 		long num = sc.nextInt();
