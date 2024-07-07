@@ -3,9 +3,11 @@ import java.util.*;
 
 public class codingTest_24 
 {
-	public static int gpt_24(long num) 
+	public static List gpt_24(int num) 
 	{
-		int answer = 0;
+		// List로 객체생성
+        List<Integer> answer = new ArrayList<Integer>();
+        answer.add(num);
 		// 1이 아닐 경우 반복
 		while(num != 1) 
 		{
@@ -14,16 +16,15 @@ public class codingTest_24
 			{
 				// 2로 나눔 num에 덮어씌움
 				num/=2;
+				answer.add(num);
 			}
 			else
 			{
 				// 나머지가 0이 아닐 경우 num * 3 + 1 값
 				num = num * 3 + 1;		
-				answer ++;
+				answer.add(num);
 			}
 			
-			if(answer >= 500) answer = -1;
-			break;
 		}
 			
 		System.out.println("answer : " + answer);
@@ -35,7 +36,7 @@ public class codingTest_24
 		// Scanner 객체 생성
 		Scanner sc = new Scanner(System.in);
 		System.out.println("숫자를 입력해주세요");
-		long num = sc.nextInt();
+		int num = sc.nextInt();
 
 		gpt_24(num);
 	}
