@@ -26,6 +26,7 @@ public class codingTest_24
 			}
 			
 		}
+		// 왜 결과 값이 안나오지??
 			
 		System.out.println("answer : " + answer);
 		return answer;
