@@ -6,7 +6,16 @@ public class codingTest_25
 	public static double gpt_25(int[] arr) 
 	{
 		double answer = 0;
+		int sum = 0;
+				
+		for(int i = 0; i < arr.length; i++) 
+		{
+			sum += arr[i];
+			answer = sum/arr.length;
+
+		}
 		
+		System.out.println(answer);
 		return answer;
 	}
 	
