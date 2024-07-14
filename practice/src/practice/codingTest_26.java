@@ -23,12 +23,13 @@ public class codingTest_26
 		if(sum != 0) answer = false;
 		
 		System.out.println("answer : " + answer);
+		// 12넣었을 때 true 가 나와야 하는데 false가 나옴
 		return answer;
 	}
 
 	public static void main(String[] args) 
 	{
-		int x = 25;
+		int x = 12;
 		
 		gpt_26(x);
 
