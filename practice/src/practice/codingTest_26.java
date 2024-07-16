@@ -15,7 +15,7 @@ public class codingTest_26
         
 		int sum = a + b + c + d + e;
 		System.out.println("sum : " + sum);
-		
+		// 도현_ x%sum을 생각하지 못함
 		if(x % sum != 0) answer = false;
 		
 		System.out.println("answer : " + answer);
