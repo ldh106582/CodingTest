@@ -4,10 +4,16 @@ public class codingTest27
 {
 	public static String gpt_27(String phone_number) 
 	{
-		String asnwer = "";
+		String answer = "";
 		System.out.println(phone_number);
 		
-		return asnwer;
+		for(int i = 0; i < phone_number.length(); i++) 
+		{
+			if(i < phone_number.length() - 4) answer += '*';
+			else answer += phone_number.charAt(i);
+		}
+		System.out.println(answer);
+		return answer;
 	}
 	
 	
