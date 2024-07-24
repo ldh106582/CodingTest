@@ -10,7 +10,7 @@ public class codingTest_29
 
 	public static void main(String[] args) 
 	{
-		
+		// 문제풀이
 	}
 
 }
