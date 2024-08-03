@@ -13,7 +13,7 @@ public class codingTest_31
 			for(int j = i+1; j < nums.length-1; j++) 
 			{
 				for(int k = j+1; k < nums.length; k++) 
-				{
+				{// 가각의 값 추출하여 sum 변수에 저장
 					sum = nums[i]+nums[j]+nums[k];
 					
 					if(isPrime(sum)) 
