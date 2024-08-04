@@ -1,4 +1,5 @@
 package practice;
+import java.util.*;
 
 public class codingTest_32 
 {
@@ -7,6 +8,21 @@ public class codingTest_32
 	{
 		int answer = 0;
 		
+		Arrays.sort(d);
+		
+		for(int i = 0; i < d.length; i++)
+		{
+			if(d[i] <= answer) 
+			{
+				answer++;
+				budget -= d[i];
+			}
+			
+			if(budget <= 0) 
+			{
+				break;
+			}
+		}
 		return answer;
 	}
 
