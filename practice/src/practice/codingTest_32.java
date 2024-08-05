@@ -7,22 +7,24 @@ public class codingTest_32
 	public static int gpt_32(int[] d, int budget) 
 	{
 		int answer = 0;
+        int result = 0;
 		
 		Arrays.sort(d);
 		
 		for(int i = 0; i < d.length; i++)
 		{
-			if(d[i] <= answer) 
+            result += d[i];
+			if(result > budget) 
 			{
-				answer++;
-				budget -= d[i];
-			}
-			
-			if(budget <= 0) 
-			{
+				answer = i;
 				break;
 			}
-		}
+	    }
+        if(result <= budget) 
+        {
+            answer = d.length;
+        }
+
 		return answer;
 	}
 
