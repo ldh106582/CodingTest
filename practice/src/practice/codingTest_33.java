@@ -5,13 +5,14 @@ public class codingTest_33
 	public static String[] gpt_33(int n, int[] arr1, int[] arr2) 
 	{
 		String[] answer = {};
+		String binary = null;
 		
 		for(int i = 0; i < arr1.length; i++) 
 		{
-			if(arr1[i] % 2 != 0 || arr2[i] % 2 != 0)
+			binary = Integer.toBinaryString(arr1[i]);
+			if(binary == "1") 
 			{
-				int arr_1 = arr1[i] %= 2;
-				System.out.println(arr_1);
+				binary = "#";
 			}
 		}
 		return answer;
