@@ -4,24 +4,15 @@ public class codingTest_33
 {
 	public static String[] gpt_33(int n, int[] arr1, int[] arr2) 
 	{
-		String[] answer = {};
-		String ar1 = null;
-		String ar2 = null;
+		String[] answer = new String[n];
+		
 		for(int i = 0; i < n; i++) 
 		{
-			ar1 = Integer.toBinaryString(arr1[i]);
-			ar2 = Integer.toBinaryString(arr2[i]);
-			
-			if(ar1.equals("1") || ar2.equals("1")) 
-			{
-				ar1 = "#";
-				ar2 = "#";
-				System.out.println("ar1 : " + ar1 + " ar2 : " + ar2);
-			}
-			else
-			{
-				
-			}
+            answer[i] = Integer.toBinaryString(arr1[i] | arr2[i]);
+            answer[i] = String.format("%" + n + "s", answer[i]);
+            answer[i] = answer[i].replace("1", "#");
+            answer[i] = answer[i].replace("0", " ");
+    		System.out.println(answer[i]);
 		}
 		return answer;
 	}
