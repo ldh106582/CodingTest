@@ -6,6 +6,7 @@ public class dartGame
 	public static int dart_Game(String dartResult) 
 	{
 		int answer = 0;
+		int[] srcore = new int[3];
 		
 		return answer;
 	}
