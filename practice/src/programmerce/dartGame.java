@@ -13,6 +13,7 @@ public class dartGame
 	
 	public static void main(String[] args) 
 	{
+		// 2024.08.13 1차 문제 풀이
 		String dartResult = null;
 		dart_Game(dartResult);
 	}
