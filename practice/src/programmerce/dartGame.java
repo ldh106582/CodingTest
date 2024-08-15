@@ -8,7 +8,7 @@ public class dartGame
 		int answer = 0;
 		
 		String[] dart = dartResult.split("");
-		int[] srcore = new int[3];
+		int[] score = new int[3];
 		
 		int index = -1; // 스코어 인덱스번호
 		// 2024.08.14 문제 풀이
@@ -17,16 +17,29 @@ public class dartGame
 			if(dart[i].matches("[0-9]")) 
 			{
 				index++;
-				srcore[index] = Integer.parseInt(dart[i]);
+				score[index] = Integer.parseInt(dart[i]);
 				
-				if(dart[i+1].matches("[0-9")) 
+				if(dart[i+1].matches("[0-9]")) 
 				{
-					srcore[index] *= 10;
+					score[index] *= 10;
 					i++;
 				}
 			}
-
 			// 2024.08.15 문제풀이
+			switch(dart[i]) 
+			{
+			case "T" :
+				score[index]= (int)Math.pow(score[index], 3);
+				break;
+			case "D" :
+				score[index]= (int)Math.pow(score[index], 2);
+				break;
+			case "*" :
+				score[index] *= 2;
+				// 2024.08.16 문제 풀이
+				break;
+				
+			}
 		}
 		
 		
