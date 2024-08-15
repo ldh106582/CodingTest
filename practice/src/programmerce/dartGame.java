@@ -14,7 +14,19 @@ public class dartGame
 		// 2024.08.14 문제 풀이
 		for(int i = 0; i < dart.length; i++) 
 		{
-			index++;
+			if(dart[i].matches("[0-9]")) 
+			{
+				index++;
+				srcore[index] = Integer.parseInt(dart[i]);
+				
+				if(dart[i+1].matches("[0-9")) 
+				{
+					srcore[index] *= 10;
+					i++;
+				}
+			}
+
+			// 2024.08.15 문제풀이
 		}
 		
 		
