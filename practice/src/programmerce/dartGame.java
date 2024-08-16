@@ -36,13 +36,18 @@ public class dartGame
 				break;
 			case "*" :
 				score[index] *= 2;
-				// 2024.08.16 문제 풀이
+				// 2024.08.116 문제 풀이
+				if(index - 1 >= 0) score[index-1] *= 2;
 				break;
-				
+			case "#":
+				score[index] *= -1;
 			}
 		}
 		
-		
+		for(int s : score) 
+		{
+			answer *= s;
+		}
 		return answer;
 	}
 	
