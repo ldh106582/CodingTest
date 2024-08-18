@@ -28,11 +28,11 @@ public class dartGame
 			// 2024.08.15 문제풀이
 			switch(dart[i]) 
 			{
-			case "T" :
-				score[index]= (int)Math.pow(score[index], 3);
-				break;
 			case "D" :
 				score[index]= (int)Math.pow(score[index], 2);
+				break;
+			case "T" :
+				score[index]= (int)Math.pow(score[index], 3);
 				break;
 			case "*" :
 				score[index] *= 2;
@@ -46,7 +46,7 @@ public class dartGame
 		
 		for(int s : score) 
 		{
-			answer *= s;
+			answer += s;
 		}
 		return answer;
 	}
