@@ -21,12 +21,14 @@ public class race
 		
 		for(int i = 0; i < participant.length; i++)
 		{
-			if(!participant[i].equals(completion[i])) 
+			if(i < completion.length && participant[i] != null && completion[i] != null)
 			{
+
 				answer = participant[i];
 				break;
 			}
 		}
+		System.out.println(answer);
 		return answer;
 	}
 	
