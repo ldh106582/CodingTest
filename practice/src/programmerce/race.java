@@ -19,24 +19,40 @@ public class race
 		Arrays.sort(participant);
 		Arrays.sort(completion);
 		
-		for(int i = 0; i < participant.length; i++)
+		for(int i = 0; i < completion.length; i++)
 		{
-			if(i < completion.length && participant[i] != null && completion[i] != null)
+			if(!participant.equals(completion))
 			{
-
-				answer = participant[i];
+				answer = completion[i];
 				break;
 			}
 		}
-		System.out.println(answer);
 		return answer;
 	}
 	
 	
 	public static void main(String[] args) 
 	{
-		String[] participant = new String[] {"leo", "kiki", "eden"};
-		String[] completion = new String[] {"kiki", "eden"};
+
+		String[] participant = new String[] {"marina", "josipa", "nikola", "vinko", "filipa"};
+		String[] completion = new String[] {"josipa", "filipa", "marina", "nikola"};
+		String answer = null;
+		
+		Arrays.sort(participant);
+		Arrays.sort(completion);
+		
+		for(int i = 0; i < completion.length; i++ ) 
+		{
+			System.out.println(participant[i]);
+
+			if(!participant[i].equals(completion[i])) 
+			{
+				answer = participant[i];
+				break;
+			}
+		}
+		System.out.println(answer);
+		
 		race(participant, completion);
 	}
 
