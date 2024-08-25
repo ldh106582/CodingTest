@@ -41,19 +41,15 @@ public class race
 		Arrays.sort(participant);
 		Arrays.sort(completion);
 		
-		for(int i = 0; i < completion.length; i++ ) 
+		int i = 0;
+		for(i = 0; i < completion.length; i++ ) 
 		{
-			System.out.println(participant[i]);
-
 			if(!participant[i].equals(completion[i])) 
 			{
-				answer = participant[i];
-				break;
+                participant[i];
 			}
 		}
-		System.out.println(answer);
 		
-		race(participant, completion);
 	}
 
 }
