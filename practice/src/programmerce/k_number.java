@@ -1,10 +1,15 @@
 package programmerce;
 
+import java.util.*;
+
 public class k_number 
 {
 	public static int[] kth_number(int[] array, int[][] commands)
 	{
 		int[] answer = {};
+		
+		System.out.println(Arrays.toString(array));
+		System.out.println(Arrays.toString(commands));
 		
 		return answer;
 	}
