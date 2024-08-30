@@ -6,7 +6,21 @@ public class k_number
 {
 	public static int[] kth_number(int[] array, int[][] commands)
 	{
-		int[] answer = {};
+		int[] answer = new int[commands.length];
+		
+		int n = 0;
+		
+		for(int i = 0; i < commands.length; i++) 
+		{
+			int k = 0;
+			
+			int[] list = new int[commands[i][1] - commands[i][0] + 1];
+			
+			for(int j = commands[i][0]; j <= commands[i][1]; j++) 
+			{
+				list[k++] = array[j-1];
+			}
+		}
 		
 		System.out.println(Arrays.toString(array));
 		System.out.println(Arrays.toString(commands));
