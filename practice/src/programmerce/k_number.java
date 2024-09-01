@@ -20,10 +20,10 @@ public class k_number
 			{
 				list[k++] = array[j-1];
 			}
+			Arrays.sort(list);
+			answer[n++] = list[commands[i][2] -1];
+			System.out.println(Arrays.toString(answer));
 		}
-		
-		System.out.println(Arrays.toString(array));
-		System.out.println(Arrays.toString(commands));
 		
 		return answer;
 	}
