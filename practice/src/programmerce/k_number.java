@@ -26,6 +26,11 @@ public class k_number
 		
 		return answer;
 	}
+	
+	public static int[] soultion(int[] array, int[][] commands)
+	{
+		return answer;
+	}
 
 	public static void main(String[] args) 
 	{
@@ -33,6 +38,7 @@ public class k_number
 		int[][] commands = new int[][] {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
 		
 		kth_number(array , commands);
+		soultion(array, commands);
 	}
 
 }
