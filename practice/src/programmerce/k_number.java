@@ -1,13 +1,12 @@
 package programmerce;
 
 import java.util.*;
-
 public class k_number 
 {
 	public static int[] kth_number(int[] array, int[][] commands)
 	{
 		int[] answer = new int[commands.length];
-		
+		System.out.println(Arrays.toString(answer));
 		int n = 0;
 		
 		for(int i = 0; i < commands.length; i++) 
