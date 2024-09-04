@@ -29,6 +29,13 @@ public class k_number
 	
 	public static int[] soultion(int[] array, int[][] commands)
 	{
+		int[] answer = new int[commands.length];
+		
+		for(int i = 0; i < commands.length; i++) 
+		{
+			int[] temp = Arrays.copyOfRange(array, commands[i][0]-1, commands[i][1]);
+		}
+		
 		return answer;
 	}
 
