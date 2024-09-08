@@ -10,11 +10,11 @@ public class c_04
 		{
 			int key = arr[i];
 			int j = 0;
-			for(j = i - 1; j >= 0 && arr[j] > key; j--)
+			for(j = i - 1;  j >= 0 && arr[j] > key; j--)
 				arr[j + 1] = arr[j];
-			System.out.println("dh : " + Arrays.toString(arr) + " i : " + i + " j : " + j);		
+			System.out.println("dh : " + Arrays.toString(arr) + " i : " + i + " j : " + j + " k : " + key);
 			arr[j+1] = key;
-			System.out.println("ld : " + Arrays.toString(arr) + " i : " + i + " j : " + j);
+			System.out.println("ld : " + Arrays.toString(arr) + " i : " + i + " j : " + j+ " k : " + key);
 		}
 	}
 	public static void main(String[] args) 

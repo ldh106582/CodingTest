@@ -7,6 +7,8 @@ public class c_05
         int temp = a[x];
         a[x] = a[y];
         a[y] = temp;
+
+        System.out.println(temp);
     }
 
     public static void main(String[] args) 
@@ -20,13 +22,13 @@ public class c_05
             for(int j = i + 1; j < 6; j++) 
             {
                 if(a[j] < a[least]) least = j;
+                sf.sf(a, i, least);
             }
-            sf.sf(a, i, least); // 배열과 인덱스를 전달
         }
         
-        for(int k = 0; k < 6; k++) 
-        {
-            System.out.println(a[k]);
-        }
+//        for(int k = 0; k < 6; k++) 
+//        {
+//            System.out.println(a[k]);
+//        }
     }
 }
