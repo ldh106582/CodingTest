@@ -1,5 +1,7 @@
 package practice;
 
+import java.util.*;
+
 public class c_04 
 {	
 	public void calc(int arr[]) 
@@ -10,9 +12,9 @@ public class c_04
 			int j = 0;
 			for(j = i - 1; j >= 0 && arr[j] > key; j--)
 				arr[j + 1] = arr[j];
-			System.out.println("dh : " + +arr[j + 1] + " i : " + i + " j : " + j);		
+			System.out.println("dh : " + Arrays.toString(arr) + " i : " + i + " j : " + j);		
 			arr[j+1] = key;
-			System.out.println("ld : " + +arr[j + 1] + " i : " + i + " j : " + j);
+			System.out.println("ld : " + Arrays.toString(arr) + " i : " + i + " j : " + j);
 		}
 	}
 	public static void main(String[] args) 
