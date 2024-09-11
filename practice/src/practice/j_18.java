@@ -3,12 +3,13 @@ package practice;
 public class j_18 
 {
 	
-	static void change(char arr[]) 
+	static void change(char arr[])
 	{
 		for(int i = 0; i < arr.length; i++) 
 		{
 			if(arr[i] == 'b') arr[i] = 'c';
-			else if(i == arr.length - 1) {
+			else if(i == arr.length - 1) 
+			{
 				arr[i] = arr[i - 1];
 				System.out.println("dh : " + (arr.length - 1) );
 			}

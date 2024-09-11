@@ -1,6 +1,7 @@
 package practice;
 
-class point{
+class point
+{
 	int x;
 	int y;
 }
@@ -17,11 +18,13 @@ public class j_03
 		System.out.printf("%d",m.y);
 	}
 	
-	static void calc(point s) {
+	static void calc(point s) 
+	{
 		s.x /= 10;
 	}
 	
-	static void getValue(point p) {
+	static void getValue(point p) 
+	{
 		p.y = p.x;
 	}
 
