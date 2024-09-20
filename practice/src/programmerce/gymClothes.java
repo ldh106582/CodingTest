@@ -7,9 +7,19 @@ public class gymClothes
 	{
 		int answer = 0;
 		
-		System.out.println(Arrays.toString(lost));
-		System.out.println(Arrays.toString(reverse));
-		
+		for(int i = 0; i < lost.length; i++)
+		{
+			for(int j = 0; j < reverse.length; j++)
+			{
+				if(lost[i] == reverse[j]) 
+				{
+					answer++;
+					lost[i] = -1;
+					reverse[j] = -1;
+					break;
+				}
+			}
+		}
 		return answer;
 	}
 	
