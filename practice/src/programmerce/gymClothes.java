@@ -20,6 +20,18 @@ public class gymClothes
 				}
 			}
 		}
+		
+		for (int i = 0; i < lost.length; i++)
+		{
+			for(int j = 0; j < reverse.length; j++)
+			{
+				if (lost[i] - 1 == reverse[j] || lost[i] + 1 == reverse[j]) {
+					answer++;
+					reverse[j] = -1;
+					break;
+				}
+			}
+		}
 		return answer;
 	}
 	
