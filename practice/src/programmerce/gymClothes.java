@@ -7,15 +7,21 @@ public class gymClothes
 	{
 		int answer = 0;
 		
+		// lostlength = 2
 		for(int i = 0; i < lost.length; i++)
 		{
+			// reverselength = 3
 			for(int j = 0; j < reverse.length; j++)
 			{
 				if(lost[i] == reverse[j]) 
 				{
+					System.out.println("dh");
 					answer++;
 					lost[i] = -1;
 					reverse[j] = -1;
+					
+					System.out.println(lost[i]);
+					System.out.println(reverse[j]);
 					break;
 				}
 			}
@@ -25,13 +31,16 @@ public class gymClothes
 		{
 			for(int j = 0; j < reverse.length; j++)
 			{
-				if (lost[i] - 1 == reverse[j] || lost[i] + 1 == reverse[j]) {
+				if (lost[i] - 1 == reverse[j] || lost[i] + 1 == reverse[j]) 
+				{
 					answer++;
 					reverse[j] = -1;
+					System.out.println(reverse[j]);
 					break;
 				}
 			}
 		}
+//		System.out.println(answer);
 		return answer;
 	}
 	
