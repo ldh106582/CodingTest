@@ -18,6 +18,7 @@ public class Test20240214 {
             for(int i = 0; i < a.length; i++){
                 if((odd && a[i] % 2 != 0) || (!odd && a[i] % 2 == 0))
                     result += a[i];
+                System.out.print(result);
             }        
             return result;
         } 
