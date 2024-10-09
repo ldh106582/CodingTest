@@ -9,7 +9,8 @@ public class Test20240214 {
     }
 
     interface Number {
-        int sum(int[] a, boolean odd);
+    	int sum(int[] a, boolean odd);
+        
     }
 
     static class ODDNumber implements Number { // static으로 변경
@@ -21,7 +22,8 @@ public class Test20240214 {
                 	System.out.print(a[i]);
                     result += a[i];
                }
-            }        
+            }
+            System.out.println(result);
             return result;
         } 
     }
