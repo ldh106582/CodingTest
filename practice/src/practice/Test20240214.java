@@ -15,10 +15,12 @@ public class Test20240214 {
     static class ODDNumber implements Number { // static으로 변경
         public int sum(int[] a, boolean odd) {
             int result = 0;
-            for(int i = 0; i < a.length; i++){
+            for(int i = 0; i < a.length; i++) {
                 if((odd && a[i] % 2 != 0) || (!odd && a[i] % 2 == 0))
+               {
+                	System.out.print(a[i]);
                     result += a[i];
-                System.out.print(result);
+               }
             }        
             return result;
         } 
