@@ -7,6 +7,7 @@ public class jtest01
 	{
 		int ab = 0;
 
+		System.out.println(a);
 		if (a > 1) {
 			Obnumber(a - 1);
 			ab = a % 2;
