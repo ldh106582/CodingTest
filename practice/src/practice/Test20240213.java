@@ -14,6 +14,9 @@ public class Test20240213
         int result = parr2[1] + parr2[2] + parr1[0];
         
         System.out.println(result);
+        System.out.println(parr2[1] );
+        System.out.println(parr2[2] );
+        System.out.println(parr2[0] );
 	}
 
 }
