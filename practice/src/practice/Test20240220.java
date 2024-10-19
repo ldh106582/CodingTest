@@ -10,8 +10,11 @@ public class Test20240220
 		String str = "ITISTESTSTRING";
 		String[] result = str.split("T");
 		System.out.println(result[3]);
+		System.out.println(result);
 		System.out.println(Arrays.toString(result));
-		for(int i = 0; i < result.length; i++) {
+		
+		for(int i = 0; i < result.length; i++) 
+		{
 			System.out.println(result[i]);
 		}
 	}
