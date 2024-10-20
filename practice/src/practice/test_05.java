@@ -12,6 +12,7 @@ public class test_05
 			if((++i)%3 == 0) 
 			{
 				System.out.println(i);
+				System.out.println(a);
 			}
 		}
 
