@@ -11,8 +11,9 @@ public class test_05
 			System.out.println("i : " + i);
 			if((++i)%3 == 0) 
 			{
+				System.out.println((++i)%3);
 				System.out.println(i);
-				System.out.println(a);
+				System.out.println(a + i);
 			}
 		}
 
