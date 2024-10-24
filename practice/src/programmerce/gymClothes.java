@@ -3,25 +3,28 @@ import java.util.*;
 
 public class gymClothes 
 {
-	public int solution(int n, int[] lost, int[] reverse) 
+	public int solution(int n, int[] lost, int[] reserve) 
 	{
 		int answer = 0;
+		
+        Arrays.sort(reserve);
+        Arrays.sort(lost);
 		
 		// lostlength = 2
 		for(int i = 0; i < lost.length; i++)
 		{
 			// reverselength = 3
-			for(int j = 0; j < reverse.length; j++)
+			for(int j = 0; j < reserve.length; j++)
 			{
-				if(lost[i] == reverse[j]) 
+				if(lost[i] == reserve[j]) 
 				{
 					System.out.println("dh");
 					answer++;
 					lost[i] = -1;
-					reverse[j] = -1;
+					reserve[j] = -1;
 					
 					System.out.println(lost[i]);
-					System.out.println(reverse[j]);
+					System.out.println(reserve[j]);
 					break;
 				}
 			}
@@ -29,18 +32,17 @@ public class gymClothes
 		
 		for (int i = 0; i < lost.length; i++)
 		{
-			for(int j = 0; j < reverse.length; j++)
+			for(int j = 0; j < reserve.length; j++)
 			{
-				if (lost[i] - 1 == reverse[j] || lost[i] + 1 == reverse[j]) 
+				if (lost[i] - 1 == reserve[j] || lost[i] + 1 == reserve[j]) 
 				{
 					answer++;
-					reverse[j] = -1;
-					System.out.println(reverse[j]);
+					reserve[j] = -1;
+					System.out.println(reserve[j]);
 					break;
 				}
 			}
 		}
-//		System.out.println(answer);
 		return answer;
 	}
 	
