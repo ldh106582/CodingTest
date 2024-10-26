@@ -1,9 +1,13 @@
 package programmerce;
+import java.util.*;
 
 public class failpercetage 
 {
 	public int[] solution(int n, int[] strage) {
 		int[] result = {};
+		
+		System.out.println(n);
+		System.out.println(Arrays.toString(strage));
 		
 		return result;
 	}
