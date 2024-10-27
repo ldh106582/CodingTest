@@ -9,6 +9,18 @@ public class failpercetage
 		System.out.println(n);
 		System.out.println(Arrays.toString(strage));
 		
+		int[] present = new int[n + 1];
+		int[] clear = new int[n + 1];
+		
+		for(int i = 0; i < strage.length; i++) {
+			for (int j = 0; j < strage[i]; j++) {
+				clear[j] += i ;
+			}
+			present[strage[i] - 1] += 1;
+		}
+		
+		
+		
 		return result;
 	}
 
