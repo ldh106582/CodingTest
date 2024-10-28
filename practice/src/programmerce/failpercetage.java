@@ -29,6 +29,12 @@ public class failpercetage
 			}
 		}
 		
+		List<Integer> list = new ArrayList<>(map.keySet());
+		list.sort((o1, o2) -> Double.compare(map.get(o2), map.get(o1)));
+		result = list.stream().mapToInt(i -> i).toArray();
+		
+		System.out.println(result);
+
 		return result;
 	}
 
