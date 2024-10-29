@@ -15,8 +15,10 @@ public class failpercetage
 		for(int i = 0; i < strage.length; i++) {
 			for (int j = 0; j < strage[i]; j++) {
 				clear[j] += i ;
+				System.out.println("clear[j] : " + clear[j]);
 			}
 			present[strage[i] - 1] += 1;
+			System.out.println("present[strage[i] - 1] : " + present[strage[i] - 1]);
 		}
 		
 		Map<Integer, Double> map = new HashMap<>();
