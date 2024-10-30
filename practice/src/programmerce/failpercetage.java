@@ -6,19 +6,14 @@ public class failpercetage
 	public int[] solution(int n, int[] strage) {
 		int[] result = {};
 		
-		System.out.println(n);
-		System.out.println(Arrays.toString(strage));
-		
 		int[] present = new int[n + 1];
 		int[] clear = new int[n + 1];
 		
 		for(int i = 0; i < strage.length; i++) {
 			for (int j = 0; j < strage[i]; j++) {
 				clear[j] += i ;
-				System.out.println("clear[j] : " + clear[j]);
 			}
 			present[strage[i] - 1] += 1;
-			System.out.println("present[strage[i] - 1] : " + present[strage[i] - 1]);
 		}
 		
 		Map<Integer, Double> map = new HashMap<>();
@@ -35,7 +30,7 @@ public class failpercetage
 		list.sort((o1, o2) -> Double.compare(map.get(o2), map.get(o1)));
 		result = list.stream().mapToInt(i -> i).toArray();
 		
-		System.out.println(result);
+		System.out.println(Arrays.toString(result));
 
 		return result;
 	}
