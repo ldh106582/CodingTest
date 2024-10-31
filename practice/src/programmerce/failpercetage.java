@@ -17,8 +17,11 @@ public class failpercetage
 		}
 		
 		Map<Integer, Double> map = new HashMap<>();
+		
 		for(int i = 0; i < n; i++) {
 			if(present[i] == 0 || clear[i] == 0) {
+				System.out.println("present[i] : " + present[i]);
+				System.out.println("clear[i] : " + clear[i]);
 			} 
 			else 
 			{
