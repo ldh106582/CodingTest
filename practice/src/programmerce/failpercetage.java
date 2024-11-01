@@ -20,8 +20,7 @@ public class failpercetage
 		
 		for(int i = 0; i < n; i++) {
 			if(present[i] == 0 || clear[i] == 0) {
-				System.out.println("present[i] : " + present[i]);
-				System.out.println("clear[i] : " + clear[i]);
+				map.put(i + 1, 0.0);
 			} 
 			else 
 			{
@@ -32,9 +31,6 @@ public class failpercetage
 		List<Integer> list = new ArrayList<>(map.keySet());
 		list.sort((o1, o2) -> Double.compare(map.get(o2), map.get(o1)));
 		result = list.stream().mapToInt(i -> i).toArray();
-		
-		System.out.println(Arrays.toString(result));
-
 		return result;
 	}
 
